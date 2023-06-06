@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Anton&family=Montserrat:wght@400;600;800&family=Outfit:wght@300;400;500;600;700&family=Overpass:wght@400;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,800;1,300;1,400;1,500;1,600;1,700&family=Roboto:wght@300&family=Rubik&display=swap');
+
+:root{
+    --base-fonts: 'Montserrat', 'sans-serif' 
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+form,
+h2,
+label,
+p{
+    font-family: var(--base-fonts);
+}
+
+header{
+    position: absolute;
+    top: 0;
+}
+
+/* check-box css */
+.list-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-block: 0 1rem;
+    overflow: hidden;
+}
+
+.list-container > form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-weight: 600;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    font-size: 0.75rem;
+}
+
+.submit-form{
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    height: 5rem;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit{
+    font-family: var(--base-fonts);
+    color: white;
+    border: none;
+    background-color: black;
+    border-radius: 25px;
+    padding: 0.5rem 5rem 0.5rem 5rem;
+}
+
+.to-do-list-content{
+    font-family: var(--base-fonts);
+    font-weight: 600;
+    border: none;
+    width: 20rem;
+    border-bottom: 0.1px solid black;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    margin-block: 1rem 1.5rem;
+}
+
+.to-do-list-content:focus{
+    outline: none;
+}
+
+.submit-container{
+    position: absolute;
+    margin-top: 15rem;
+    margin: auto;
+    bottom: 10rem;
+    left: 37%;
+}
+
+/* media query */
+@media(max-width: 500px){
+    .submit-container{
+        position: absolute;
+        margin-top: 15rem;
+        margin: auto;
+        bottom: 10rem;
+        left: 2%;
+    }
+}
